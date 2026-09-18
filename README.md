@@ -85,7 +85,10 @@ El ciclo de vida del proyecto está estipulado en **6 meses**, estructurado en l
 ## 👥 Equipo del Proyecto
 
 <div align=center>
+
 <b>Proyecto Integrador 2026 — Prácticas Profesionales (6to 6ta)</b>
+
+<br>
 
 | Integrante | Rol Asignado | Responsabilidad Técnica |
 | :--- | :--- | :--- |
