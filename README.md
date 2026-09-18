@@ -1,134 +1,109 @@
-# AutoZone (A.Z) — Educación Vial Digital e Interactiva 🚗📱
+<div align="center">
+    <h1>🚗 AUTOZONE</h1>
+    <b>Educación Vial Moderna para la Era Digital</b>
+</div>
 
-> **Ayudamos y educamos a las personas para un tránsito más seguro** [1-4].
+<br>
 
----
+<div align="center">
 
-## 📌 Introducción y Descripción del Proyecto
+[![GitHub last commit - Dynamic](https://img.shields.io/github/last-commit/SheilaMoreno126/AutoZone-Vial?style=for-the-badge&logo=Git&logoColor=65686B&label=Last%20Commit&labelColor=101418&color=99CCFF)](#)
+[![Android - Static](https://img.shields.io/badge/Android-Kotlin?style=for-the-badge&logo=Android&logoColor=FFFFFF&label=App&labelColor=101418&color=3DDC84)](#)
+[![Database - Static](https://img.shields.io/badge/Firebase-Realtime_DB?style=for-the-badge&logo=Firebase&logoColor=FFCA28&label=Database&labelColor=101418&color=FF8F00)](#)
+[![Backend - Static](https://img.shields.io/badge/Python-Backend?style=for-the-badge&logo=Python&logoColor=FFFFFF&label=Logic&labelColor=101418&color=3776AB)](#)
 
-**AutoZone (A.Z)** es una plataforma educativa multiplataforma orientada a la concienciación y enseñanza de las normas y señales de tránsito en Argentina [5-8]. El proyecto nace para responder a la siniestralidad vial urbana y sustituir los manuales teóricos tradicionales por una herramienta accesible, dinámica y gamificada [6, 7, 9, 10].
+</div>
 
-Desarrollado como **Proyecto Integrador** en la **Escuela Técnica N° 29 D.E. 6 "DELEPIANE"** (6to 6ta T.N.), AutoZone facilita la comprensión de la normativa de tránsito tanto para aspirantes a obtener la licencia de conducir como para peatones, ciclistas y estudiantes [5, 6, 11-13].
+> **"Ayudamos y Educamos a Las Personas Para un Tránsito Más Seguro."**
+> AutoZone (A.Z) es una plataforma educativa integral e interactiva que reemplaza los manuales tradicionales de tránsito. Diseñada inicialmente como una aplicación móvil nativa para Android, su misión es facilitar la comprensión de la señalética y las leyes de tránsito mediante una interfaz accesible, reduciendo la siniestralidad vial y aumentando la tasa de aprobación en los exámenes teóricos para licencias de conducir.
 
----
+<br>
 
-## 🎯 Objetivos
+## 📑 Tabla de Contenidos
+- [🚀 Características Principales](#-características-principales)
+- [🏗️ Arquitectura y Tecnologías](#️-arquitectura-y-tecnologías)
+- [🧩 Módulos del Sistema](#-módulos-del-sistema)
+- [🗺️ Cronograma de Desarrollo](#️-cronograma-de-desarrollo)
+- [👥 Equipo del Proyecto](#-equipo-del-proyecto)
 
-### Objetivo General
-Desarrollar e implementar una plataforma educativa multiplataforma (Android y Web) orientada a la concienciación e instrucción en seguridad vial, fundamentada en las normativas vigentes de Argentina [14-16].
+<br>
 
-### Objetivos Específicos
-* **Diseñar una base de datos centralizada e interactiva** de señales viales argentinas (reglamentarias, preventivas e informativas) [15-18].
-* **Implementar mecánicas de gamificación** (trivias cronometradas, puntajes y niveles de logro) para incentivar el aprendizaje [15, 16, 19-21].
-* **Integrar funciones de accesibilidad universal** mediante síntesis de voz (audio-explicación) para personas con dificultades lectoras o visuales [15, 16, 22-24].
-* **Proporcionar un panel de administración (Backoffice)** para el monitoreo del rendimiento de los usuarios, gestión de contenidos y copias de seguridad [24-28].
+## 🚀 Características Principales
 
----
+- **🎮 Aprendizaje Gamificado:** La plataforma divide la experiencia en un Modo de Aprendizaje (base de datos visual) y un Modo de Práctica. Incluye trivias cronometradas y un sistema de logros desbloqueables para incentivar la maestría del usuario.
+- **♿ Accesibilidad Universal:** Implementación de audio-explicaciones mediante síntesis de voz natural, permitiendo que personas con dificultades visuales o preferencias auditivas aprendan de forma autónoma.
+- **📖 Catálogo Interactivo:** Librería visual de señales (Reglamentarias, Preventivas e Informativas) con búsqueda inteligente, filtrado semántico y explicaciones contextuales.
+- **📈 Panel de Control Administrador:** Un *Backoffice* integrado para la gestión de usuarios, altas/bajas de material pedagógico, copias de seguridad (backups) y generación de reportes de progreso.
 
-## ✨ Funcionalidades Principales
+<br>
 
-1. **Gestión de Usuarios y Perfiles (Auth Manager):**
-   * Registro, inicio y cierre de sesión (Login/Logout) [26, 29, 30].
-   * Control de acceso y permisos según el rol asignado (Administrador, Alumno, Preceptor, Profesor, Pariente) [26, 29, 30].
+## 🏗️ Arquitectura y Tecnologías
 
-2. **Catálogo Interactivo de Señales:**
-   * Búsqueda inteligente y filtrado por categorías oficiales: *Reglamentarias*, *Preventivas* e *Informativas* [17, 18, 31-33].
-   * Visualización de imágenes representativas con nombres y explicaciones contextuales de cada señal [17, 22, 34, 35].
+> [!NOTE]
+> AutoZone está diseñado con una arquitectura modular y multiplataforma, priorizando la escalabilidad operativa, el almacenamiento en tiempo real y una futura expansión hacia una versión web y de escritorio.
 
-3. **Función Auditiva de Accesibilidad:**
-   * Reproducción en voz alta del nombre y la descripción de cada señal mediante síntesis de voz [16, 22-24, 36].
+### 💻 Stack Tecnológico
 
-4. **Modo Práctico / Cuestionarios Gamificados:**
-   * Trivias interactivas con preguntas aleatorias, control de tiempo límite y cálculo de puntajes [19, 21, 29, 37, 38].
-   * Registro del avance individual y tableros de puntuación [19, 39-41].
+<div align=center>
 
-5. **Panel de Control Administrador:**
-   * Gestión de altas, bajas y modificaciones (CRUD) de usuarios y material pedagógico [24, 28, 42, 43].
-   * Generación de reportes de progreso y ejecución de copias de seguridad (*Backup*) [24, 26, 28, 36].
-
----
-
-## 🛠️ Tecnologías Utilizadas
-
-| Capa / Módulo | Tecnología Seleccionada | Descripción y Uso |
+| Capa | Tecnología | Descripción |
 | :--- | :--- | :--- |
-| **App Móvil Nativa** | **Kotlin** | Lenguaje oficial recomendado por Google para el desarrollo nativo en Android [25, 27, 44, 45]. |
-| **Plataforma Web** | **HTML5 / CSS3 / JavaScript** | Portal informativo y versión web interactiva [25, 27, 46, 47]. |
-| **Backend & Lógica IA** | **Python** | Generación adaptativa de cuestionarios y procesamiento de datos [25, 27, 45, 48]. |
-| **Base de Datos & Auth** | **Firebase Realtime Database** | Almacenamiento en tiempo real, autenticación de usuarios y persistencia [25, 27, 49, 50]. |
-| **Métricas & Analytics** | **Firebase Analytics** | Monitoreo anónimo de estadísticas de uso y pantallas más consultadas [25, 27, 49, 51]. |
-| **Control de Versiones** | **Git & GitHub** | Gestión del código fuente y trabajo colaborativo del equipo [25, 27, 51, 52]. |
+| **📱 App Móvil Nativa** | Kotlin | Lenguaje oficial recomendado para garantizar el mejor rendimiento en Android. |
+| **🌐 Plataforma Web** | HTML5, CSS3, JS | Portal informativo y base para la futura versión web interactiva. |
+| **⚙️ Backend & Lógica IA** | Python | Procesamiento de datos y generación adaptativa de cuestionarios. |
+| **💾 Base de Datos & Auth** | Firebase | Almacenamiento con *Realtime Database* y autenticación centralizada de perfiles. |
+| **📊 Métricas** | Firebase Analytics | Monitoreo anónimo de estadísticas de uso y retención de usuarios. |
 
----
+</div>
 
-## 🏗️ Estructura del Repositorio
+<br>
 
-```text
-AutoZone-Vial/
-├── index.html              # Interfaz web interactiva del catálogo y cuestionarios [52]
-├── señales_de_transito.sql # Esquema SQL con los datos iniciales de señales viales [52]
-├── usuario.sql             # Esquema SQL con la estructura y roles de usuarios [52]
-├── Josias.jpg              # Recurso de imagen / foto de integrante [52]
-└── README.md               # Documentación principal del proyecto [52]
-🚀 Instalación y Configuración
-1. Requisitos Previos
-Navegador web moderno (Google Chrome recomendado)
-.
-Servidor MySQL / MariaDB (para entornos SQL locales) o consola de Firebase Realtime Database
-.
-Entorno Android Studio para la compilación de la app móvil en Kotlin
-.
-2. Pasos para la Ejecución Web Local
-Clonar el repositorio desde GitHub:
-git clone https://github.com/SheilaMoreno126/AutoZone-Vial.git
-Ingresar al directorio del proyecto:
-cd AutoZone-Vial
-Abrir el archivo index.html en tu navegador o mediante un servidor de desarrollo local (ej. Live Server en VS Code)
-.
-3. Configuración de Base de Datos
-Modo Local (SQL): Importar los archivos señales_de_transito.sql y usuario.sql en tu gestor MySQL
-.
-Modo Producción (Firebase): Migrar la estructura de los archivos .sql a nodos JSON dentro de Firebase Realtime Database y vincular las claves en la app
-.
-💡 Modo de Uso
-Navegación por Catálogo: Accede al catálogo para explorar las señales reglamentarias, preventivas e informativas con sus descripciones oficiales
-.
-Activación de Audio: Haz clic en el ícono de audio integrado para escuchar la lectura explicativa de la señal
-.
-Evaluación de Conocimientos: Ingresa a la sección de cuestionarios/trivias para responder las preguntas cronometradas y medir tu puntaje
-.
-👥 Equipo y Créditos
-Institución: Escuela Técnica N° 29 D.E. 6 "DELEPIANE" (6to 6ta T.N.)
+## 🧩 Módulos del Sistema
 
-Docentes Responsables: Prof. Patricia Figueroa y Prof. Fabián Lapuchevsky
-Integrante
-Rol Asignado
-Área de Responsabilidad Técnica
-Sheila Moreno
-Líder de Proyecto
-Coordinación general, control de tiempos y alcance del proyecto
-.
-Josías Giménez
-Dev Lead Full-Stack
-Arquitectura Android (Kotlin), scripts Python y lógica de backend
-.
-Ester Cruz
-Diseñadora UX/UI & Dev
-Diseño de interfaz visual, prototipado de pantallas y paleta de colores
-.
-Samuel García Mamani
-Administrador y Operaciones
-Gestión de requerimientos, administración de base de datos y documentación
-.
-Kiara Cortez
-Analista de Calidad (QA)
-Pruebas funcionales, testing y validación de la normativa legal vial
-.
-Lautaro Olivera
-Desarrollador Frontend / Web
-Maquetación web complementaria y soporte técnico multicanal
-.
-📜 Licencia
-© 2026 AutoZone (A.Z)
-. Desarrollado con fines educativos e informativos dentro del marco del proyecto integrador escolar
-. Todos los derechos reservados.
+AutoZone divide su operatividad en cuatro pilares fundamentales para cubrir integralmente la educación vial:
+
+1. **🔒 Auth Manager (Perfiles y Permisos):** Sistema de inicio de sesión con control granular de acceso basado en 5 roles (Administrador, Alumno, Preceptor, Profesor, Pariente).
+2. **📚 Catálogo Multimedia:** Librería escalable de señales de tránsito con soporte de imágenes y rutas de audio.
+3. **🎯 Métricas y Gamificación (Cuestionarios):** Motor de trivias con puntajes, tiempos y un historial que alimenta el algoritmo adaptativo.
+4. **⚙️ Backoffice Admin:** Gestión integral del contenido legal vial y exportación de reportes.
+
+<br>
+
+## 🗺️ Cronograma de Desarrollo
+
+El ciclo de vida del proyecto está estipulado en **6 meses**, estructurado en las siguientes fases iterativas:
+
+- [x] **Mes 1:** Levantamiento de Requerimientos y análisis FODA.
+- [x] **Mes 2:** Diseño de interfaces UX/UI y Prototipado visual.
+- [ ] **Mes 3:** Desarrollo Core (Catálogo Interactivo y Autenticación).
+- [ ] **Mes 4:** Módulo de Cuestionarios, integración de Audio e IA.
+- [ ] **Mes 5:** Pruebas de Calidad (QA), testing funcional y ajustes finales.
+- [ ] **Mes 6:** Despliegue, presentación oficial y monitoreo.
+
+<br>
+
+## 👥 Equipo del Proyecto
+
+<div align=center>
+<b>Proyecto Integrador 2026 — Prácticas Profesionales (6to 6ta)</b>
+
+| Integrante | Rol Asignado | Responsabilidad Técnica |
+| :--- | :--- | :--- |
+| **Sheila Moreno** | Líder de Proyecto | Coordinación general, control de tiempos y alcance. |
+| **Josías Giménez** | Lead Full-Stack | Arquitectura Android (Kotlin), Python y backend. |
+| **Ester Cruz** | UX/UI & Developer | Diseño de interfaz, prototipado y paleta visual. |
+| **Samuel García M.** | Admin & Operaciones | Requerimientos, administración de BD y documentación. |
+| **Kiara Cortez** | Analista de QA | Validación legal, pruebas funcionales y testing. |
+| **Lautaro Olivera** | Frontend / Web | Maquetación web y soporte técnico multicanal. |
+
+</div>
+
+<br>
+
+<div align="center">
+
+<h2>¡Construyendo un futuro más seguro en las calles! 🚦</h2>
+
+[![GitHub License - Static](https://img.shields.io/badge/MIT-License?style=for-the-badge&logo=GitBook&label=License&&labelColor=101418&color=BBBBDD)](#)
+
+</div>
