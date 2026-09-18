@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoZone | Enciclopedia de Señales de Tránsito Argentina</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts para un look profesional -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Auto<span>Zone</span></a>
+            <ul class="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#offerings">Ofertas</a></li>
+                <li><a href="#catalog">Catálogo</a></li>
+                <li><a href="#trivia">Trivia</a></li>
+                <li><a href="#team">Equipo</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 1. Página Principal (Hero) -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Domina las Calles de Argentina</h1>
+            <p class="fade-in">La enciclopedia interactiva y educativa para aprender todas las señales de tránsito. Prepárate para conducir con seguridad y confianza.</p>
+            <div class="hero-btns fade-in">
+                <a href="#catalog" class="btn btn-primary">Explorar Catálogo</a>
+                <a href="#trivia" class="btn btn-secondary">Probar mis Conocimientos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Sobre Nosotros -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title left">Sobre AutoZone</h2>
+                    <p><strong>"Ayudamos y Educamos a Las Personas Para un Tránsito Más Seguro."</strong></p>
+                    <p>AutoZone (A.Z) es una plataforma educativa integral e interactiva que nace para reemplazar los manuales tradicionales de tránsito. Nuestra misión es facilitar la comprensión de la señalética y las leyes viales mediante una interfaz accesible y moderna.</p>
+                    <p>Buscamos reducir la siniestralidad vial y aumentar la tasa de aprobación en los exámenes teóricos, transformando el aprendizaje tedioso en una experiencia digital dinámica y eficiente.</p>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card">
+                        <span class="about-icon">🚦</span>
+                        <h3>Educación Vial Moderna</h3>
+                        <p>Adaptada a la era digital para estudiantes y futuros conductores.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Lo que Ofrecemos -->
+    <section id="offerings" class="offerings">
+        <div class="container">
+            <h2 class="section-title">Nuestras Características</h2>
+            <div class="offerings-grid">
+                <div class="offering-item">
+                    <div class="offering-icon">🎮</div>
+                    <h3>Aprendizaje Gamificado</h3>
+                    <p>Trivias cronometradas y un sistema de logros para incentivar la maestría del usuario.</p>
+                </div>
+                <div class="offering-item">
+                    <div class="offering-icon">♿</div>
+                    <h3>Accesibilidad Universal</h3>
+                    <p>Soporte de audio-explicaciones mediante síntesis de voz para un aprendizaje autónomo.</p>
+                </div>
+                <div class="offering-item">
+                    <div class="offering-icon">📖</div>
+                    <h3>Catálogo Interactivo</h3>
+                    <p>Librería visual con búsqueda inteligente y filtrado semántico de señales.</p>
+                </div>
+                <div class="offering-item">
+                    <div class="offering-icon">📈</div>
+                    <h3>Panel de Control</h3>
+                    <p>Gestión de perfiles y seguimiento de progreso educativo en tiempo real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Cómo encontrar una señal (Guía) -->
+    <section id="guide" class="guide">
+        <div class="container">
+            <h2 class="section-title">Cómo navegar la plataforma</h2>
+            <div class="guide-grid">
+                <div class="guide-item">
+                    <div class="guide-icon">🔍</div>
+                    <h3>Búsqueda Directa</h3>
+                    <p>Utiliza la barra de búsqueda para encontrar una señal por su nombre exacto.</p>
+                </div>
+                <div class="guide-item">
+                    <div class="guide-icon">📁</div>
+                    <h3>Filtros por Categoría</h3>
+                    <p>Clasificamos las señales en Reglamentarias, Preventivas e Informativas para facilitar tu estudio.</p>
+                </div>
+                <div class="guide-item">
+                    <div class="guide-icon">📝</div>
+                    <h3>Aprende y Evalúa</h3>
+                    <p>Lee la descripción de cada señal y luego pon a prueba tu memoria en nuestro módulo de trivia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Catálogo y Buscador -->
+    <section id="catalog" class="catalog">
+        <div class="container">
+            <h2 class="section-title">Catálogo de Señales</h2>
+
+            <div class="catalog-controls">
+                <div class="search-wrapper">
+                    <input type="text" id="search-input" placeholder="Buscar señal (ej: Pare, Curva...)">
+                    <span class="search-icon">🔍</span>
+                </div>
+
+                <div class="filter-tabs">
+                    <button class="tab active" data-category="all">Todas</button>
+                    <button class="tab" data-category="reglamentaria">Reglamentarias</button>
+                    <button class="tab" data-category="preventiva">Preventivas</button>
+                    <button class="tab" data-category="informativa">Informativas</button>
+                </div>
+            </div>
+
+            <div id="signs-grid" class="signs-grid">
+                <!-- Las tarjetas de señales se generan dinámicamente vía JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Módulo de Trivia/Cuestionario -->
+    <section id="trivia" class="trivia">
+        <div class="container">
+            <h2 class="section-title">Desafío de Conocimientos</h2>
+
+            <div id="trivia-start" class="trivia-card">
+                <h3>¿Estás listo para el examen?</h3>
+                <p>Responde correctamente la mayor cantidad de señales en el menor tiempo posible.</p>
+                <button id="start-trivia" class="btn btn-primary">Comenzar Trivia</button>
+            </div>
+
+            <div id="trivia-game" class="trivia-card hidden">
+                <div class="trivia-header">
+                    <div class="trivia-stat">Puntaje: <span id="score">0</span></div>
+                    <div class="trivia-stat">Tiempo: <span id="timer">00</span>s</div>
+                </div>
+
+                <div class="question-container">
+                    <p id="question-text">Cargando pregunta...</p>
+                    <div id="question-image-container">
+                        <img id="question-image" src="" alt="Señal de tránsito">
+                    </div>
+                    <div id="options-grid" class="options-grid">
+                        <!-- Opciones generadas dinámicamente -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="trivia-result" class="trivia-card hidden">
+                <h3>Resultado Final</h3>
+                <div class="final-score">Tu puntaje: <span id="final-score">0</span></div>
+                <p id="result-message"></p>
+                <button id="restart-trivia" class="btn btn-primary">Intentar de Nuevo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Equipo del Proyecto -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Nuestro Equipo</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">SM</div>
+                    <h3>Sheila Moreno</h3>
+                    <p class="team-role">Líder de Proyecto</p>
+                    <p class="team-desc">Coordinación general, control de tiempos y alcance.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">JG</div>
+                    <h3>Josías Giménez</h3>
+                    <p class="team-role">Lead Full-Stack</p>
+                    <p class="team-desc">Arquitectura Android, Python y backend.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">EC</div>
+                    <h3>Ester Cruz</h3>
+                    <p class="team-role">UX/UI & Developer</p>
+                    <p class="team-desc">Diseño de interfaz, prototipado y paleta visual.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">SG</div>
+                    <h3>Samuel García M.</h3>
+                    <p class="team-role">Admin & Operaciones</p>
+                    <p class="team-desc">Requerimientos, administración de BD y documentación.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">KC</div>
+                    <h3>Kiara Cortez</h3>
+                    <p class="team-role">Analista de QA</p>
+                    <p class="team-desc">Validación legal, pruebas funcionales y testing.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">LO</div>
+                    <h3>Lautaro Olivera</h3>
+                    <p class="team-role">Frontend / Web</p>
+                    <p class="team-desc">Maquetación web y soporte técnico multicanal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Contacto -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>¿Tienes alguna duda?</h3>
+                    <p>Estamos aquí para ayudarte a mejorar la seguridad vial en Argentina. Escríbenos para sugerencias, reportes de errores o colaboraciones.</p>
+                    <div class="contact-details">
+                        <div class="detail">
+                            <span class="detail-icon">📧</span>
+                            <span>contacto@autozone-vial.ar</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-icon">🌐</span>
+                            <span>github.com/SheilaMoreno126/AutoZone-Vial</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label>Nombre Completo</label>
+                        <input type="text" placeholder="Tu nombre..." required>
+                    </div>
+                    <div class="form-group">
+                        <label>Correo Electrónico</label>
+                        <input type="email" placeholder="email@ejemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mensaje</label>
+                        <textarea rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Auto<span>Zone</span></a>
+                    <p>Construyendo un futuro más seguro en las calles.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-link-group">
+                        <h4>Plataforma</h4>
+                        <a href="#catalog">Catálogo</a>
+                        <a href="#trivia">Trivia</a>
+                        <a href="#about">Nosotros</a>
+                    </div>
+                    <div class="footer-link-group">
+                        <h4>Legal</h4>
+                        <a href="#">Términos de Uso</a>
+                        <a href="#">Privacidad</a>
+                        <a href="#">Licencia MIT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AutoZone - Proyecto Integrador 6to 6ta. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
